@@ -11,7 +11,7 @@ func f(stroka string) int {
 		return 0
 	}
 
-	simbols := ",.!?;:'()"
+	simbols := ",.!?;:'()|&%#@$*<>`"
 	result := stroka
 	for i := 0; i < len(simbols); i++ {
 		result = strings.ReplaceAll(result, string(simbols[i]), "")
