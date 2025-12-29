@@ -12,7 +12,7 @@ func f(stroka string) int {
 	}
 
 	simbols := ",.!?;:'()"
-	var result string = stroka
+	result := stroka
 	for i := 0; i < len(simbols); i++ {
 		result = strings.ReplaceAll(result, string(simbols[i]), "")
 	}
